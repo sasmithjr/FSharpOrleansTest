@@ -11,11 +11,16 @@ open Xunit
 type GrainUnitTests(fixture: Fixtures.ClusterFixture) =
     let client = fixture.Cluster.Client
 
-    [<Fact>]
-    let ``AdderGrain adds`` () = task {
+    [<Theory>]
+    [<InlineData(0, 0)>]
+    [<InlineData(0, 1)>]
+    [<InlineData(3, 4)>]
+    [<InlineData(-1, -2)>]
+    let ``AdderGrain adds`` (x, y) = task {
         let grain = client.GetGrain<IAdder>(1L)
 
-        let! result = grain.Add(3, 4)
+        let! result = grain.Add(x, y)
+        let expected = x + y
 
-        test <@ 7 = result @>
+        test <@ expected = result @>
     }
