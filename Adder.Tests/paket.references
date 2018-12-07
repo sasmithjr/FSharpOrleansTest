@@ -1,0 +1,6 @@
+Microsoft.NET.Test.Sdk
+Microsoft.Orleans.TestingHost
+TaskBuilder.fs
+Unquote
+xunit
+xunit.runner.visualstudio
