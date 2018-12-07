@@ -2,7 +2,9 @@ storage: none
 
 source https://api.nuget.org/v3/index.json
 
-nuget FSharp.Core
+nuget FSharp.Core 4.5.4
+nuget Giraffe 3.4.0
+nuget Microsoft.AspNetCore.App
 nuget Microsoft.NET.Test.Sdk 15.9.0
 nuget Microsoft.Orleans.Client 2.1.2
 nuget Microsoft.Orleans.Core 2.1.2

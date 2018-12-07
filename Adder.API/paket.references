@@ -1,0 +1,9 @@
+FSharp.Core
+Giraffe
+Microsoft.AspNetCore.App
+Microsoft.Orleans.Client
+Microsoft.Orleans.Core
+nuget Microsoft.Orleans.Core.Abstractions
+Microsoft.Orleans.OrleansCodeGenerator
+Microsoft.Orleans.Server
+TaskBuilder.fs
