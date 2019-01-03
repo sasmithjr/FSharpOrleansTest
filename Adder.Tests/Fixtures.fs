@@ -22,8 +22,7 @@ module rec Fixtures =
                     .AddMemoryGrainStorageAsDefault()
                     .ConfigureApplicationParts(fun parts ->
                         parts
-                            .AddApplicationPart((typeof<IAdder>).Assembly)
-                            .AddApplicationPart((typeof<AdderGrain>).Assembly)
+                            .AddApplicationPart((typeof<AdderGrain>).Assembly).WithReferences()
                             .WithCodeGeneration()
                             |> ignore
                     )

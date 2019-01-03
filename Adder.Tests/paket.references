@@ -1,3 +1,4 @@
+FSharp.Core
 Microsoft.NET.Test.Sdk
 Microsoft.Orleans.TestingHost
 TaskBuilder.fs

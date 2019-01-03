@@ -1,0 +1,4 @@
+FSharp.Core
+Microsoft.Orleans.OrleansCodeGenerator
+Microsoft.Orleans.Server
+Taskbuilder.fs
